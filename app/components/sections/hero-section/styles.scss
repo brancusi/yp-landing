@@ -1,0 +1,39 @@
+& {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #C95050;
+  color: white;
+}
+
+.navbar {
+  margin-bottom: -5em;
+}
+
+.navbar, .content {
+  z-index: 2;
+}
+
+.content {
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.copy {
+  text-transform: uppercase;
+  overflow-wrap: normal;
+  font-size: 3em;
+}
+
+.image-container {
+  margin-top: 5em;
+}
