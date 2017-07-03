@@ -4,7 +4,9 @@ const shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+    'ember-cli-babel': {
+      includePolyfill: true
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

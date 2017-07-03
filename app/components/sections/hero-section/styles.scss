@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  margin-bottom: -5em;
+  // margin-bottom: -5em;
 }
 
 .navbar, .content {
@@ -16,27 +16,41 @@
 
 .content {
   height: 100%;
+  font-weight: 500;
+
 }
 
 .background {
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0.3;
   z-index: 1;
 }
 
+.scroll-indicator-container {
+  z-index: 1;
+  top: 90%;
+  left: 50%;
+  position: absolute;
+  font-size: 2em;
+}
+
 .copy {
-  text-transform: uppercase;
-  overflow-wrap: normal;
-  font-size: 3em;
+  span {
+    opacity: 0;
+    margin-left: -2em;
+    margin-right: 2em;
+    text-transform: uppercase;
+    font-size: 3em;
+  }
 }
 
 .image-container {
-  margin-top: 4em;
-
+  margin-top: 2em;
+  opacity: 0;
   img {
     width: 100%;
     height: 100%;
