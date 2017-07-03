@@ -8,8 +8,6 @@ export default Ember.Component.extend(ScrollAnimatable, {
   classNames: ['full-frame'],
 
   buildAnimations() {
-    // const $background = this.$('.background');
-
     const tl = new TimelineMax({
       tweens:[
         TweenLite.to(this.$('.background'), .5, { opacity: 0.3 }),
@@ -20,7 +18,6 @@ export default Ember.Component.extend(ScrollAnimatable, {
 
     return [
       {tween: tl},
-      // {tween: TweenLite.to($background, 1, {opacity:0.3})}
     ];
   }
 });
