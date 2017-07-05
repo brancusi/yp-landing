@@ -17,7 +17,6 @@
 .content {
   height: 100%;
   font-weight: 500;
-
 }
 
 .background {
@@ -28,14 +27,6 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-}
-
-.scroll-indicator-container {
-  z-index: 1;
-  top: 90%;
-  left: 50%;
-  position: absolute;
-  font-size: 2em;
 }
 
 .copy {

@@ -9,11 +9,17 @@ export default Ember.Component.extend(ScrollAnimatable, {
   classNames: ["row"],
 
   buildAnimations() {
-    const $imageContainer = this.$('.image-container');
-
     return [
       {
-        tween: TweenLite.to($imageContainer, 2, {opacity:1}),
+        tween: TweenLite.to(this.$('.image-container'), .5, { opacity: 1, 'margin-top':0, delay:0.25 }),
+        range: [.2, .5]
+      },
+      {
+        tween: TweenLite.to(this.$('.copy span'), 1, { opacity: 1, 'margin-left':0, 'margin-right':0, delay:0.5, ease:Power2.easeInOut }),
+        range: [.2, .5]
+      },
+      {
+        tween: TweenLite.to(this.$('.solution-image-container'), .5, { opacity: 1, 'margin-top':'4em', delay:0.25 }),
         range: [.2, .5]
       }
     ];

@@ -1,4 +1,13 @@
+.scroll-indicator-container {
+  z-index: 1;
+  top: 90%;
+  left: 50%;
+  position: absolute;
+  font-size: 2em;
+}
+
 .content {
-  color: white;
+  color: inherit;
   opacity: 0;
+  margin-left: -0.5em;
 }

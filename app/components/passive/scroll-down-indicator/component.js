@@ -6,6 +6,8 @@ const {
 } = easing;
 
 export default Ember.Component.extend({
+  classNames: ['scroll-down-indicator'],
+
   willDestroyElement() {
     this.tween.kill();
     this.fadeInTween.kill();

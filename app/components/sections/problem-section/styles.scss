@@ -1,4 +1,5 @@
 & {
+  position: relative;
   height: 100vh;
   width: 100%;
   background: #F9F9F9;
@@ -15,4 +16,8 @@
     height: 100%;
     object-fit: contain;
   }
+}
+
+.scroll-indicator {
+  color: black;
 }
