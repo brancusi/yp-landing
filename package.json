@@ -47,7 +47,8 @@
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.13.0",
     "flexi": "^2.0.1",
-    "loader.js": "^4.2.3"
+    "loader.js": "^4.2.3",
+    "poststylus": "^0.2.3"
   },
   "engines": {
     "node": ">= 4"
