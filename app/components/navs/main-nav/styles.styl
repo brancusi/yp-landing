@@ -23,8 +23,8 @@
     display: none
 
 .compact
+  color: dope-black
   position: fixed
-  color: black
   text-transform: uppercase
 
   .links
@@ -35,13 +35,17 @@
   +above(600px)
     display: none
 
-
 &.menu-open
   background: white
   width: 100%
 
   .links
     opacity: 1
+
+  .hamburger-inner
+    background-color: dope-black
+  .hamburger-inner::after
+    background-color: dope-black
 
 .ui-container
   position: fixed

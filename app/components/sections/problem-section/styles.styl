@@ -8,16 +8,19 @@
   display: flex
   flex-direction: column
   lost-align: center
-  margin: 10em 0
+  margin: 5em 0
+
+  +above(600px)
+    margin: 10em 0
 
 .fruit-container
-  lost-align: center
-  opacity: 0
-  height: 100%
-  width: 70%
+  width: 95%
 
-  +below(600px)
-    width: 95%
+  +above(600px)
+    lost-align: center
+    opacity: 0
+    height: 100%
+    width: 70%
 
   img
     width: 100%
@@ -25,13 +28,13 @@
     object-fit: contain
 
 .scale-container
-  lost-align: center
-  color: dope-black
-  height: 100%
-  width: 10%
+  width: 20%
 
-  +below(600px)
-    width: 20%
+  +above(600px)
+    lost-align: center
+    color: dope-black
+    height: 100%
+    width: 10%
 
   img
     width: 100%
