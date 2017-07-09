@@ -15,13 +15,8 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "@html-next/flexi-config": "^2.0.0",
-    "@html-next/flexi-default-styles": "^2.0.1",
-    "@html-next/flexi-dsl": "^2.0.1",
-    "@html-next/flexi-layouts": "^2.0.1",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
-    "ember-chrome-devtools": "^0.1.1",
     "ember-cli": "2.13.2",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.0.0",
@@ -33,9 +28,9 @@
     "ember-cli-htmlbars-inline-precompile": "^0.4.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.0.0",
-    "ember-cli-sass": "^6.2.0",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
+    "ember-cli-stylus": "^1.0.7",
     "ember-cli-uglify": "^1.2.0",
     "ember-component-css": "^0.3.4",
     "ember-data": "^2.13.0",
@@ -46,9 +41,11 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.13.0",
-    "flexi": "^2.0.1",
     "loader.js": "^4.2.3",
-    "poststylus": "^0.2.3"
+    "lost": "^8.1.0",
+    "poststylus": "^0.2.3",
+    "rucksack-css": "^0.9.1",
+    "rupture": "^0.6.2"
   },
   "engines": {
     "node": ">= 4"

@@ -1,11 +1,18 @@
-<centered class="navbar" justify="between">
-  <hbox fit>
-    <span class="logo">You Pressed</span>
-  </hbox>
-  <hbox fit>
-    <hbox fit class="navitem">About</hbox>
-    <hbox fit class="navitem">Blog</hbox>
-    <hbox fit class="navitem">Support</hbox>
-    <hbox fit class="navitem">Login</hbox>
-  </hbox>
-</centered>
+<div class="full">
+  {{link-to "You Pressed" "index" class="nav-link" invokeAction="closeMenu"}}
+  {{link-to "Login" "index" class="nav-link" invokeAction="closeMenu"}}
+</div>
+
+<div class="compact">
+  <div class="links">
+    {{link-to "Login" "index" class="nav-link" invokeAction="closeMenu"}}
+  </div>
+
+  <div class="ui-container">
+    <button class="hamburger hamburger--slider {{isActive}}" type="button" {{action "toggle"}}>
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+</div>

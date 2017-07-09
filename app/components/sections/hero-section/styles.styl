@@ -1,0 +1,56 @@
+&
+  position: relative
+  height: 100vh
+  width: 100%
+  background: #C95050
+  color: white
+
+section
+  lost-flex-container: row
+
+  +below(800px)
+    lost-flex-container: column
+    padding: 2em
+
+  .copy-container
+    z-index: 2
+    display: flex
+    lost-align: center;
+    lost-column: 1/2
+
+    +below(800px)
+      lost-column: 1
+      margin-top: 3em
+
+    span
+      opacity: 0
+      margin-left: -3em
+      font-weight: 500
+      text-transform: uppercase
+      font-size: responsive 30px 50px
+      font-range: 420px 1280px
+      max-width: 10em
+
+  .image-container
+    z-index: 2
+    display: flex
+    lost-align: center;
+
+    lost-column: 1/2
+    margin-top: 10em
+
+    +below(800px)
+      lost-column: 1
+      margin-top: 4em
+
+    img
+      opacity: 0
+      margin-top: 3em
+      width: 100%
+      height: 100%
+      object-fit: contain
+
+.background
+  opacity: 0
+  position: absolute 0
+  z-index: 1
