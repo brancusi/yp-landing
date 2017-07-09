@@ -1,0 +1,31 @@
+.header
+  font-size: responsive 30px 50px
+  font-range: 420px 1280px
+  text-transform: uppercase
+  text-align: center
+  padding: 2em
+
+.steps
+  display: flex
+  flex-direction: column
+
+  +above(600px)
+    flex-direction: row
+
+.step
+  lost-align: center
+  padding: 2em 0
+
+  +above(600px)
+    lost-column: 1/2 0 0
+
+.step-1
+  background: #AA4F4F
+
+.step-2
+  background: rgba(#AA4F4F, .8)
+
+img
+  height: 80%
+  width: 80%
+  object-fit: contain
