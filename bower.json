@@ -1,0 +1,20 @@
+{
+  "name": "youpressed-landing",
+  "description": "Small description for youpressed-landing goes here",
+  "main": "",
+  "authors": [
+    "Aram Zadikian <brancusi@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typewriterjs": "https://github.com/tameemsafi/typewriterjs.git#^1.0.0"
+  }
+}
