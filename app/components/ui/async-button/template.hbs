@@ -1,0 +1,10 @@
+<span class="button-label">{{label}}</span>
+<div class="icon-container">
+  {{#if loading}}
+    <span class="spin-container">
+      {{fa-icon 'spinner'}}
+    </span>
+  {{else}}
+    {{fa-icon icon}}
+  {{/if}}
+</div>

@@ -1,3 +1,70 @@
-{{#each model as |product|}}
-  {{product.label}}
-{{/each}}
+<div class="header">
+  Here's a demo
+</div>
+
+<div class="content">
+  <div class="products-container section">
+    <div class="instructions">
+      <div class="instruction-content">
+        <div class="instruction">Update these quantities</div>
+        <div class="arrow-container">
+          <img class="instruction-arrow" src="images/instruction-arrow.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="label">Product Name</div>
+    <div class="section-content">
+      {{#each model.children as |edge|}}
+        <div class="product-row">
+          <span class="product-name">
+            {{edge.b.label}}
+          </span>
+          {{one-way-input edge.q
+              class='edge-qty'
+              update=(action 'handleQuantityUpdate' edge)
+              onblur=(action 'handleQuantityBlur' edge)}}
+        </div>
+      {{/each}}
+    </div>
+
+    {{ui/async-button
+        class='print-button'
+        label='Export As PDF'
+        icon='long-arrow-right'
+        onClick=(action 'printAll')}}
+
+  </div>
+
+  <div class="card section">
+    <div class="title">
+      Raw Ingredients
+    </div>
+    <div class="row-content">
+      {{#each ingredients as |child|}}
+        <div class="row">
+          <span class="label">{{child.label}}</span>
+          <span class="qty">
+            {{round child.q}} {{child.uom}}
+          </span>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="card section">
+    <div class="title">
+      Juice List
+    </div>
+    <div class="row-content">
+      {{#each recipes as |child|}}
+        <div class="row">
+          <span class="label">{{child.label}}</span>
+          <span class="qty">
+            {{round child.q}} {{child.uom}}
+          </span>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

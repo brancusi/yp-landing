@@ -1,0 +1,102 @@
+&
+  background: #F9F9F9
+  color: #545454
+
+.header
+  font-size: responsive 30px 50px
+  font-range: 420px 1280px
+  text-transform: uppercase
+  text-align: center
+  padding: 2em
+
+.content
+  display: flex
+  font-size: 1.2em
+  justify-content: center
+  +below(1100px)
+    flex-direction: column
+
+.section
+  flex-direction: column
+  margin: 1em
+  +above(1100px)
+    width: 20em
+
+.products-container
+  min-width: 20em
+
+  .label
+    font-size: 0.7em
+    margin-top: 2em
+
+  .instructions
+    display: flex
+    +below(1100px)
+      justify-content: flex-end
+
+    .instruction-content
+      display: flex
+      position: relative
+
+      .instruction
+        text-align: right
+        font-size: responsive 25px 28px
+        font-range: 420px 1280px
+
+      .arrow-container
+        width: 80px
+
+      .instruction-arrow
+        width: 60px
+        position: absolute
+        top: 10px
+
+  .product-row
+    margin-bottom: 2em
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+
+  input
+    font-size: inherit
+    border: none
+    background: none
+    border-bottom: 1px solid dope-black
+    width: 3em
+
+.section-content
+  margin: 1em 0 3em 0
+
+.print-button
+  border: 1px solid #FF5F00
+  color: #FF5F00
+  font-size: 1em
+  justify-content: center
+  align-items: center
+
+  .icon-container
+    margin-right: 1em
+    order: -1
+
+.card
+  .title
+    font-size: 1.2em
+    background: white
+    padding: 1em
+    margin-bottom: 0.25em
+
+  .row-content
+    background: white
+    display: flex
+    flex-direction: column
+    padding: 1em
+
+    .row
+      display: flex
+      justify-content: space-between
+      align-items: baseline
+      margin-bottom: 1em
+
+      .qty
+        font-size: 0.8em
+        width: 4em

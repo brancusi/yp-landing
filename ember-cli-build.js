@@ -11,6 +11,9 @@ module.exports = function(defaults) {
     babel: {
       optional: ['es7.decorators', 'es7.functionBind']
     },
+    'ember-cli-babel': {
+      includePolyfill: true
+    },
     stylusOptions: {
       use: [
         rupture(),
@@ -47,6 +50,8 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  app.import("bower_components/ramda/dist/ramda.min.js");
+  app.import("bower_components/mathjs/dist/math.min.js");
   app.import('bower_components/typewriterjs/typewriter.min.js');
 
   return app.toTree();
